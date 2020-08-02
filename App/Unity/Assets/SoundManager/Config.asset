@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00c0f85c5cd44714fb8969bc98b3e829, type: 3}
+  m_Name: Config
+  m_EditorClassIdentifier: 
+  m_Mixer: {fileID: 24100000, guid: b6dac73c7155297419e20b698ee597bb, type: 2}
+  m_Bgm:
+    m_MixerGroup: {fileID: 243174766740057546, guid: b6dac73c7155297419e20b698ee597bb,
+      type: 2}
+    m_Format: Audio/BGM/{0}
+  m_GameSE:
+    m_MixerGroup: {fileID: 243786083159421320, guid: b6dac73c7155297419e20b698ee597bb,
+      type: 2}
+    m_Format: Audio/SE/{0}
+  m_UISE:
+    m_MixerGroup: {fileID: 243636500752017094, guid: b6dac73c7155297419e20b698ee597bb,
+      type: 2}
+    m_Format: Audio/SE/{0}
+  m_JingleSE:
+    m_MixerGroup: {fileID: 243324114198888236, guid: b6dac73c7155297419e20b698ee597bb,
+      type: 2}
+    m_Format: Audio/SE/{0}
+  m_VoiceSE:
+    m_MixerGroup: {fileID: 243088364634662526, guid: b6dac73c7155297419e20b698ee597bb,
+      type: 2}
+    m_Format: Audio/Voice/{0}

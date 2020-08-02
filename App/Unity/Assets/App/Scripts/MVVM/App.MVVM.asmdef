@@ -1,0 +1,18 @@
+{
+    "name": "App.MVVM",
+    "references": [
+        "GUID:d1464baaae563094aae76b29eeacbb69",
+        "GUID:ccde6e5ada499fa4c8ea938339b35172",
+        "GUID:d76741b9679d67d4aa2ba3a03e3aa731",
+        "GUID:aad05e09848219543ae26c5daf22ef6a"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

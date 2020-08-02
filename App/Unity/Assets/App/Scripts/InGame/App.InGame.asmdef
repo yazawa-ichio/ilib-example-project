@@ -1,0 +1,17 @@
+{
+    "name": "App.InGame",
+    "references": [
+        "GUID:ccde6e5ada499fa4c8ea938339b35172",
+        "GUID:d76741b9679d67d4aa2ba3a03e3aa731",
+        "GUID:dcc096922e7d192439b011583377bd94"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

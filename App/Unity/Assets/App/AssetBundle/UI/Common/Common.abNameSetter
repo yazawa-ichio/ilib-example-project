@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<ArrayOfSetterContext xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SetterContext xsi:type="PathToNameContext">
+    <ApplyChildrenFolder>true</ApplyChildrenFolder>
+    <OverrideStartDirPath>false</OverrideStartDirPath>
+    <UseStartDirPathAsAssetPath>true</UseStartDirPathAsAssetPath>
+    <StartDirPathStr />
+    <OverrideNameMode>true</OverrideNameMode>
+    <NameMode>DirName</NameMode>
+    <OverrideTargetExt>false</OverrideTargetExt>
+    <TargetExt>*</TargetExt>
+    <OverrideBundleExt>false</OverrideBundleExt>
+    <BundleExt>bundle</BundleExt>
+  </SetterContext>
+</ArrayOfSetterContext>

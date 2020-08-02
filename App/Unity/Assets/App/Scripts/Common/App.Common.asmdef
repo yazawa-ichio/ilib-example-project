@@ -1,0 +1,24 @@
+{
+    "name": "App.Common",
+    "references": [
+        "ILib.AssetBundles",
+        "IchioLib.MVVM",
+        "ILib.UI.Control",
+        "ILib.SoundControl",
+        "ILib.ServInjector",
+        "ILib.SoundManager",
+        "ILib.Contents",
+        "ILib.Save",
+        "UniTask",
+        "SRNet.Unity"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,250 @@
+{
+  "dependencies": {
+    "com.cysharp.unitask": {
+      "version": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask#2.0.23",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "1c264f380e2eb7d442482bf8bccec2ffc3faa79b"
+    },
+    "com.unity.assetbundlebrowser": {
+      "version": "1.7.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.editorcoroutines": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.memoryprofiler": {
+      "version": "0.2.5-preview.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.editorcoroutines": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.mobile.android-logcat": {
+      "version": "1.1.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.ugui": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {
+        "com.unity.modules.ui": "1.0.0"
+      }
+    },
+    "jp.yazawa-ichio.ilib-abloader": {
+      "version": "https://github.com/yazawa-ichio/ilib-abloader.git#0.1.6",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "f07ca99c7d823ea68d092280a67c5bb78d3b476f"
+    },
+    "jp.yazawa-ichio.ilib-contents": {
+      "version": "https://github.com/yazawa-ichio/ilib-contents.git#0.1.2",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "6aa6a99a47a604464c8cfbc1d515943d7c8fe5aa"
+    },
+    "jp.yazawa-ichio.ilib-mvvm": {
+      "version": "https://github.com/yazawa-ichio/ilib-mvvm.git#0.3.2",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "da5276f4ecaa7112e1fe0b422bb4b8226a476854"
+    },
+    "jp.yazawa-ichio.ilib-scwidgets": {
+      "version": "https://github.com/yazawa-ichio/ilib-scwidgets.git#0.0.4",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "b68c1e2d3f8ed1f1fc26e1b3454bde0b5d0807f1"
+    },
+    "jp.yazawa-ichio.ilib-serv-injector": {
+      "version": "https://github.com/yazawa-ichio/ilib-serv-injector.git#0.1.5",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "e46471a6591af85ae9adf9bd53dd363e7d8cc679"
+    },
+    "jp.yazawa-ichio.ilib-sound-control": {
+      "version": "https://github.com/yazawa-ichio/ilib-sound-control.git#0.1.2",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "a6df8ae94e98fd0c1687a31c890e8a638cb26688"
+    },
+    "jp.yazawa-ichio.ilib-ui-control": {
+      "version": "https://github.com/yazawa-ichio/ilib-ui-control.git#0.1.9",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "c8a004b600ca28c968d819f9a89f82c0c0a9001b"
+    },
+    "jp.yazawa-ichio.srnet.unity": {
+      "version": "https://github.com/yazawa-ichio/SRNet.git?path=unity/Assets/SRNet.Unity",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "f0fd102529c27c124151dcaa544a32e1d6fd2151"
+    },
+    "com.unity.modules.androidjni": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
+    },
+    "com.unity.modules.animation": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
+    },
+    "com.unity.modules.assetbundle": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
+    },
+    "com.unity.modules.audio": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
+    },
+    "com.unity.modules.director": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {
+        "com.unity.modules.audio": "1.0.0",
+        "com.unity.modules.animation": "1.0.0"
+      }
+    },
+    "com.unity.modules.imageconversion": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
+    },
+    "com.unity.modules.imgui": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
+    },
+    "com.unity.modules.jsonserialize": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
+    },
+    "com.unity.modules.particlesystem": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
+    },
+    "com.unity.modules.physics": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
+    },
+    "com.unity.modules.physics2d": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
+    },
+    "com.unity.modules.screencapture": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {
+        "com.unity.modules.imageconversion": "1.0.0"
+      }
+    },
+    "com.unity.modules.subsystems": {
+      "version": "1.0.0",
+      "depth": 1,
+      "source": "builtin",
+      "dependencies": {
+        "com.unity.modules.jsonserialize": "1.0.0"
+      }
+    },
+    "com.unity.modules.ui": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
+    },
+    "com.unity.modules.uielements": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {
+        "com.unity.modules.imgui": "1.0.0",
+        "com.unity.modules.jsonserialize": "1.0.0"
+      }
+    },
+    "com.unity.modules.unitywebrequest": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
+    },
+    "com.unity.modules.unitywebrequesttexture": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.modules.imageconversion": "1.0.0"
+      }
+    },
+    "com.unity.modules.video": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {
+        "com.unity.modules.audio": "1.0.0",
+        "com.unity.modules.ui": "1.0.0",
+        "com.unity.modules.unitywebrequest": "1.0.0"
+      }
+    },
+    "com.unity.modules.vr": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {
+        "com.unity.modules.jsonserialize": "1.0.0",
+        "com.unity.modules.physics": "1.0.0",
+        "com.unity.modules.xr": "1.0.0"
+      }
+    },
+    "com.unity.modules.xr": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {
+        "com.unity.modules.physics": "1.0.0",
+        "com.unity.modules.jsonserialize": "1.0.0",
+        "com.unity.modules.subsystems": "1.0.0"
+      }
+    }
+  }
+}

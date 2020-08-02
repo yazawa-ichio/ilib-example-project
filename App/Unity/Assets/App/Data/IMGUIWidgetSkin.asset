@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c634d8b969e4fc44af26d1bb2dd026c, type: 3}
+  m_Name: IMGUIWidgetSkin
+  m_EditorClassIdentifier: 
+  Font: {fileID: 0}
+  Box: {fileID: 21300000, guid: 162d3b45cc58fca458455ac1e7595557, type: 3}
+  Button: {fileID: 21300000, guid: c3046fd727f1ec64f9a7d0b672c237d0, type: 3}
+  Circle: {fileID: 21300000, guid: 6511b9aa145174a4c8cf145005dcd01b, type: 3}
+  Check: {fileID: 21300000, guid: 9ecc176f2ac4d4e42a789654b50a6896, type: 3}
+  Line: {fileID: 21300000, guid: 2a8cfc669cea82645b83ed1cd75f717b, type: 3}
+  Arrow: {fileID: 21300000, guid: 2c4c0468a81246146b869d82cdb515b3, type: 3}
+  Color:
+    Base: {r: 1, g: 1, b: 1, a: 1}
+    Main: {r: 1, g: 0.776, b: 0.4, a: 1}
+    Active: {r: 1, g: 0.776, b: 0.4, a: 1}
+    Disable: {r: 1, g: 0.92, b: 0.8, a: 0.9}
+    Line: {r: 0.839, g: 0.56, b: 0.368, a: 0.9}
+    Text: {r: 0, g: 0, b: 0, a: 0.85}
+    TextOnActive: {r: 1, g: 1, b: 1, a: 0.85}
+    TextOnDisable: {r: 0.4, g: 0.4, b: 0.4, a: 0.5}
+  m_CustomEntiries: []

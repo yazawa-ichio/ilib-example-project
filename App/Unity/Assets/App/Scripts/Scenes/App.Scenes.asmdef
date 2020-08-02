@@ -1,0 +1,22 @@
+{
+    "name": "App.Scenes",
+    "references": [
+        "GUID:ddaf9c63e805a764daacefc41a5e4173",
+        "GUID:ccde6e5ada499fa4c8ea938339b35172",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23",
+        "GUID:d1464baaae563094aae76b29eeacbb69",
+        "GUID:8eca044f434c29347b6c9d35b34b7bd7",
+        "GUID:33196f35ac4299a44946af5d5b0dcba7",
+        "GUID:d76741b9679d67d4aa2ba3a03e3aa731",
+        "GUID:feb71955aa3a8934d964f0ab8fad962b"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,16 @@
+Unity/Library/
+Unity/Temp/
+Unity/obj/
+Unity/Build/
+Unity/AssetBundles/
+Unity/Assets/Manifest/
+Unity/Assets/Manifest.meta
+Unity/Assets/StreamingAssets/
+Unity/Assets/StreamingAssets.meta
+Unity/.vs/
+Unity/*.sln
+Unity/*.csproj
+Unity/*.userprefs
+
+#全角死すべし
+*[! -~]*
