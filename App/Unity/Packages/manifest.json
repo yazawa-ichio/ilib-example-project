@@ -13,7 +13,7 @@
     "jp.yazawa-ichio.ilib-serv-injector": "https://github.com/yazawa-ichio/ilib-serv-injector.git#0.1.5",
     "jp.yazawa-ichio.ilib-sound-control": "https://github.com/yazawa-ichio/ilib-sound-control.git#0.1.2",
     "jp.yazawa-ichio.ilib-ui-control": "https://github.com/yazawa-ichio/ilib-ui-control.git#0.1.9",
-    "jp.yazawa-ichio.srnet.unity": "https://github.com/yazawa-ichio/SRNet.git?path=unity/Assets/SRNet.Unity",
+    "jp.yazawa-ichio.srconnection.unity": "https://github.com/yazawa-ichio/SRConnection.git?path=unity/Assets/SRConnection.Unity",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
     "com.unity.modules.assetbundle": "1.0.0",

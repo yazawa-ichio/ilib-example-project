@@ -1,8 +1,8 @@
 ﻿using Cysharp.Threading.Tasks;
 using ILib.MVVM;
 using ILib.ServInject;
-using SRNet;
-using SRNet.Unity;
+using SRConnection;
+using SRConnection.Unity;
 using System;
 using System.Linq;
 using System.Threading;

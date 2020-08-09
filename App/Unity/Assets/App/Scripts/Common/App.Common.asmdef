@@ -10,7 +10,7 @@
         "ILib.Contents",
         "ILib.Save",
         "UniTask",
-        "SRNet.Unity"
+        "SRConnection.Unity"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
