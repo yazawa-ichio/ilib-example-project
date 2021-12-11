@@ -1,6 +1,6 @@
 ﻿using App.InGame;
+using ILib.Caller;
 using ILib.Debugs;
-using ILib.MVVM;
 using ILib.ServInject;
 using UnityEngine;
 
@@ -83,7 +83,7 @@ namespace App.Debugs
 
 		protected override void OnClick()
 		{
-			Messenger.Send(GameManager.Event.Reboot);
+			ServInjector.Resolve<IDispatcher>().Broadcast(GameManager.Event.Reboot);
 		}
 	}
 #endif

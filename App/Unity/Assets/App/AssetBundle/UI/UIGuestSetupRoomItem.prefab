@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6462607390381089208}
   - component: {fileID: 6948927358692314370}
   m_Layer: 5
-  m_Name: UIInGameGuestSetupRoomItem
+  m_Name: UIGuestSetupRoomItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58,13 +58,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80fb5837420a4df429073ca067bbb595, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LightBinds:
-  - m_Path: Button
-    m_Type: ILib.MVVM.ButtonBind
-    m_Target: {fileID: 6526747743991974551}
-  - m_Path: Name
-    m_Type: ILib.MVVM.TextBind
-    m_Target: {fileID: 8245494277275018068}
+  m_ReservationViewModel: App.Binding.UIGuestSetupRoomItemVM
+  m_UpdateOnAttach: 0
 --- !u!1 &3161122636868265659
 GameObject:
   m_ObjectHideFlags: 0
@@ -78,7 +73,7 @@ GameObject:
   - component: {fileID: 1836533898500178620}
   - component: {fileID: 6526747743991974551}
   - component: {fileID: 5717103451343017208}
-  - component: {fileID: 7641187038935693149}
+  - component: {fileID: 3594369534226787516}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -129,6 +124,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 0.8714925, b: 0.5801887, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -157,6 +153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -199,7 +196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Type: 1
---- !u!114 &7641187038935693149
+--- !u!114 &3594369534226787516
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -208,9 +205,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 3161122636868265659}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cce45a14fc8a96940828a47276c2cc9f, type: 3}
+  m_Script: {fileID: 11500000, guid: a234e5fec2c3676499bef11e34d4adf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_EventName: OnButton
+  m_Argument:
+    id: 0
+  references:
+    version: 1
+    00000000:
+      type: {class: CollectionIndexArgument, ns: UVMBinding.Arguments, asm: UVMBinding}
+      data:
+        m_Index: 0
 --- !u!1 &3382840980383652169
 GameObject:
   m_ObjectHideFlags: 0
@@ -222,6 +228,7 @@ GameObject:
   - component: {fileID: 2386087235683932029}
   - component: {fileID: 6510504794138133262}
   - component: {fileID: 8245494277275018068}
+  - component: {fileID: 3407946628788508499}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -271,6 +278,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -289,3 +297,23 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 
+--- !u!114 &3407946628788508499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3382840980383652169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e26f5fce57ce31444bba574e8a94335b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Path: Name
+  m_Converter:
+    id: 0
+  m_Format: 
+  references:
+    version: 1
+    00000000:
+      type: {class: , ns: , asm: }

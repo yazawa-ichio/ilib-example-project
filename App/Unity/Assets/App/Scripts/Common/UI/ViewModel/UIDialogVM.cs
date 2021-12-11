@@ -1,157 +1,46 @@
-using ILib.MVVM;
 using System;
+using UVMBinding;
 
-namespace App.MVVM
+namespace App.Binding
 {
 
-	public partial class UIDialogVM : ViewModelBase
+	public partial class UIDialogVM : ViewModel
 	{
+		[Bind]
+		public string MessageText { get; set; }
 
-		/// BindingPath : ButtonYesText
-		/// Target: ILib.MVVM.TextBind
-		public string ButtonYesText
-		{
-			get { return GetImpl<string>("ButtonYesText"); }
-			set { SetImpl<string>("ButtonYesText", value); }
-		}
+		[Bind]
+		public string TitleText { get; set; }
 
-		/// BindingPath : ButtonNoText
-		/// Target: ILib.MVVM.TextBind
-		public string ButtonNoText
-		{
-			get { return GetImpl<string>("ButtonNoText"); }
-			set { SetImpl<string>("ButtonNoText", value); }
-		}
+		[Bind]
+		public string ButtonYesText { get; set; } = "YES";
 
-		/// BindingPath : ButtonOkText
-		/// Target: ILib.MVVM.TextBind
-		public string ButtonOkText
-		{
-			get { return GetImpl<string>("ButtonOkText"); }
-			set { SetImpl<string>("ButtonOkText", value); }
-		}
+		[Bind]
+		public string ButtonNoText { get; set; } = "NO";
 
-		/// BindingPath : ButtonYes
-		/// Target: ILib.MVVM.ButtonBind
-		public bool ButtonYesValue
-		{
-			get { return GetImpl<bool>("ButtonYes"); }
-			set { SetImpl<bool>("ButtonYes", value); }
-		}
+		[Bind]
+		public string ButtonOkText { get; set; } = "OK";
 
-		/// BindingPath : ButtonYes
-		/// Sender: ILib.MVVM.ButtonBind
-		public event Action OnButtonYes
-		{
-			add
-			{
-				Event.Subscribe("ButtonYes", value);
-			}
-			remove
-			{
-				Event.Unsubscribe("ButtonYes", value);
-			}
-		}
+		[Event]
+		public Action OnButtonYes { get; set; }
 
-		/// BindingPath : ButonNo
-		/// Target: ILib.MVVM.ButtonBind
-		public bool ButonNoValue
-		{
-			get { return GetImpl<bool>("ButonNo"); }
-			set { SetImpl<bool>("ButonNo", value); }
-		}
+		[Event]
+		public Action OnButonNo { get; set; }
 
-		/// BindingPath : ButonNo
-		/// Sender: ILib.MVVM.ButtonBind
-		public event Action OnButonNo
-		{
-			add
-			{
-				Event.Subscribe("ButonNo", value);
-			}
-			remove
-			{
-				Event.Unsubscribe("ButonNo", value);
-			}
-		}
+		[Event]
+		public Action OnButtonOk { get; set; }
 
-		/// BindingPath : ButtonOk
-		/// Target: ILib.MVVM.ButtonBind
-		public bool ButtonOkValue
-		{
-			get { return GetImpl<bool>("ButtonOk"); }
-			set { SetImpl<bool>("ButtonOk", value); }
-		}
+		[Bind]
+		public bool ActiveConfirm { get; set; }
 
-		/// BindingPath : ButtonOk
-		/// Sender: ILib.MVVM.ButtonBind
-		public event Action OnButtonOk
-		{
-			add
-			{
-				Event.Subscribe("ButtonOk", value);
-			}
-			remove
-			{
-				Event.Unsubscribe("ButtonOk", value);
-			}
-		}
+		[Bind]
+		public bool ActiveNofify { get; set; }
 
-		/// BindingPath : MessageText
-		/// Target: ILib.MVVM.TextBind
-		public string MessageText
-		{
-			get { return GetImpl<string>("MessageText"); }
-			set { SetImpl<string>("MessageText", value); }
-		}
+		[Bind]
+		public bool ButtonMaskValue { get; set; }
 
-		/// BindingPath : ActiveConfirm
-		/// Target: ILib.MVVM.ActiveBind
-		public bool ActiveConfirm
-		{
-			get { return GetImpl<bool>("ActiveConfirm"); }
-			set { SetImpl<bool>("ActiveConfirm", value); }
-		}
-
-		/// BindingPath : ActiveNofify
-		/// Target: ILib.MVVM.ActiveBind
-		public bool ActiveNofify
-		{
-			get { return GetImpl<bool>("ActiveNofify"); }
-			set { SetImpl<bool>("ActiveNofify", value); }
-		}
-
-		/// BindingPath : ButtonMask
-		/// Target: ILib.MVVM.ButtonBind
-		public bool ButtonMaskValue
-		{
-			get { return GetImpl<bool>("ButtonMask"); }
-			set { SetImpl<bool>("ButtonMask", value); }
-		}
-
-		/// BindingPath : ButtonMask
-		/// Sender: ILib.MVVM.ButtonBind
-		public event Action OnButtonMask
-		{
-			add
-			{
-				Event.Subscribe("ButtonMask", value);
-			}
-			remove
-			{
-				Event.Unsubscribe("ButtonMask", value);
-			}
-		}
-
-		/// BindingPath : TitleText
-		/// Target: ILib.MVVM.TextBind
-		public string TitleText
-		{
-			get { return GetImpl<string>("TitleText"); }
-			set { SetImpl<string>("TitleText", value); }
-		}
-
-
+		[Event]
+		public Action OnButtonMask { get; set; }
 
 	}
 

@@ -1,7 +1,6 @@
-﻿using App.MVVM;
+﻿using App.Binding;
 using Cysharp.Threading.Tasks;
 using ILib.Caller;
-using ILib.MVVM;
 using System;
 using System.Threading.Tasks;
 
@@ -9,7 +8,6 @@ namespace App
 {
 	public class TitleScene : GameScene
 	{
-		[EventKey]
 		public enum Event
 		{
 			Start,
@@ -24,6 +22,14 @@ namespace App
 		protected override Task OnShutdown()
 		{
 			return GameUI.UIStack.Pop(GameUI.UIStack.Count);
+		}
+
+		protected override void OnCompleteRun()
+		{
+			GameUI.MainVM = new UITitleVM
+			{
+				OnStart = Start
+			};
 		}
 
 		[Handle(Event.Start)]

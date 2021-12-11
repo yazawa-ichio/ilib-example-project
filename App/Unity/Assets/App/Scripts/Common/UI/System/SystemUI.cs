@@ -1,4 +1,4 @@
-﻿using App.MVVM;
+﻿using App.Binding;
 using Cysharp.Threading.Tasks;
 using ILib.Caller;
 using ILib.ServInject;

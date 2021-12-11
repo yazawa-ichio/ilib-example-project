@@ -5,6 +5,15 @@ EditorUserSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 4
   m_ConfigSettings:
+    RecentlyUsedScenePath-0:
+      value: 224247031146467a1d1e430303305a043402162e202d69032e2c1336f1af1d36c5e63beca92f31352d1b
+      flags: 0
+    RecentlyUsedScenePath-1:
+      value: 224247031146467a1d1e430303305a043402162e202d69032e2c1336f1af0031f6eb33a7f234362820
+      flags: 0
+    RecentlyUsedScenePath-2:
+      value: 224247031146467a1d1e4311132651150558352b252668252320092a
+      flags: 0
     vcSharedLogLevel:
       value: 0d5e400f0650
       flags: 0
@@ -15,7 +24,7 @@ EditorUserSettings:
   m_SemanticMergeMode: 2
   m_VCShowFailedCheckout: 1
   m_VCOverwriteFailedCheckoutAssets: 1
+  m_VCProjectOverlayIcons: 1
+  m_VCHierarchyOverlayIcons: 1
+  m_VCOtherOverlayIcons: 1
   m_VCAllowAsyncUpdate: 0
-  m_AssetPipelineMode: 0
-  m_CacheServerMode: 0
-  m_CacheServers: []

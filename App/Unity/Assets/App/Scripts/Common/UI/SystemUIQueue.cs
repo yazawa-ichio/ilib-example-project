@@ -1,13 +1,13 @@
-﻿using ILib.MVVM;
-using ILib.ServInject;
+﻿using ILib.ServInject;
 using ILib.UI;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
+using UVMBinding;
 
 namespace App
 {
-	public class SystemUIQueue : UIQueue<IViewModel, IControl>
+	public class SystemUIQueue : UIQueue<ViewModel, IControl>
 	{
 		[SerializeField]
 		GraphicRaycaster m_Raycaster = null;
@@ -29,7 +29,7 @@ namespace App
 			m_BlockUI = null;
 		}
 
-		protected override async Task<GameObject> Load<T>(string path, IViewModel prm)
+		protected override async Task<GameObject> Load<T>(string path, ViewModel prm)
 		{
 			return await Loader.Load<GameObject>("UI/" + path);
 		}

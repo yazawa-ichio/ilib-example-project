@@ -1,16 +1,16 @@
 {
     "name": "App.Common",
+    "rootNamespace": "",
     "references": [
         "ILib.AssetBundles",
-        "IchioLib.MVVM",
         "ILib.UI.Control",
         "ILib.SoundControl",
         "ILib.ServInjector",
         "ILib.SoundManager",
         "ILib.Contents",
-        "ILib.Save",
         "UniTask",
-        "SRConnection.Unity"
+        "SRConnection.Unity",
+        "UVMBinding"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

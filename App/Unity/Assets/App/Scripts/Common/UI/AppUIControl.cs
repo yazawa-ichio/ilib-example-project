@@ -1,37 +1,37 @@
-﻿using ILib.MVVM;
-using ILib.UI;
+﻿using ILib.UI;
 using System.Threading.Tasks;
 using UnityEngine;
+using UVMBinding;
 
 namespace App.UI
 {
-	public class AppUIControl : UIControl<IViewModel>, IExecuteBack
+	public class AppUIControl : UIControl<ViewModel>, IExecuteBack
 	{
-		[EventKey]
+		//[EventKey]
 		public enum Event
 		{
 			Back,
 			TryBack,
 		}
 
-		protected IView m_View;
-		protected IViewModel m_Context;
+		protected View m_View;
+		protected ViewModel m_Context;
 
 		[SerializeField]
 		bool m_CanBack = true;
 
-		protected sealed override Task OnCreated(IViewModel prm)
+		protected sealed override Task OnCreated(ViewModel prm)
 		{
 			m_Context = prm;
-			m_View = GetComponent<IView>();
+			m_View = GetComponent<View>();
 			m_View.Attach(prm);
 			return OnCreatedImpl();
 		}
 
 		protected virtual Task OnCreatedImpl()
 		{
-			m_Context.Event.Subscribe(Event.Back, Close);
-			m_Context.Event.Subscribe(Event.TryBack, () => TryBack());
+			m_Context.Event.Subscribe("OnBack", Close);
+			m_Context.Event.Subscribe(Event.TryBack.ToString(), () => TryBack());
 			return Util.Successed;
 		}
 

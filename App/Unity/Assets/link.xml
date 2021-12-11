@@ -2,11 +2,11 @@
 	<assembly fullname="Assembly-CSharp" preserve="all" />
 	<assembly fullname="App.Common" preserve="all" />
 	<assembly fullname="App.InGame" preserve="all" />
-	<assembly fullname="App.MVVM" preserve="all" />
+	<assembly fullname="App.Binding" preserve="all" />
 	<assembly fullname="App.Scenes" preserve="all" />
 	<assembly fullname="ILib" preserve="all" />
 	<assembly fullname="ILib.Contents" preserve="all" />
-	<assembly fullname="IchioLib.MVVM" preserve="all" />
+	<assembly fullname="UVMBinding" preserve="all" />
 	<assembly fullname="ILib.AssetBundles" preserve="all" />
 	<assembly fullname="ILib.AssetBundles.ExManifest" preserve="all" />
 </linker>

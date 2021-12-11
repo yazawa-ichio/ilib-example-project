@@ -1,33 +1,34 @@
 ﻿using Cysharp.Threading.Tasks;
-using ILib.MVVM;
 using ILib.UI;
 using System;
+using UVMBinding;
 
 namespace App
 {
 	public interface IGameUI
 	{
+		ViewModel MainVM { set; }
 		AppUIStack UIStack { get; }
 	}
 
 	public static class IGameUIExtension
 	{
-		public static IStackEntry Push(this IGameUI self, string path, IViewModel vm)
+		public static IStackEntry Push(this IGameUI self, string path, ViewModel vm)
 		{
 			return self.UIStack.Push(path, vm);
 		}
 
-		public static IStackEntry Push<T>(this IGameUI self, string path, Action<T> action) where T : IViewModel, new()
+		public static IStackEntry Push<T>(this IGameUI self, string path, Action<T> action) where T : ViewModel, new()
 		{
 			return self.UIStack.Push(path, action);
 		}
 
-		public static IStackEntry Switch(this IGameUI self, string path, IViewModel vm)
+		public static IStackEntry Switch(this IGameUI self, string path, ViewModel vm)
 		{
 			return self.UIStack.Switch(path, vm);
 		}
 
-		public static IStackEntry Switch<T>(this IGameUI self, string path, Action<T> action) where T : IViewModel, new()
+		public static IStackEntry Switch<T>(this IGameUI self, string path, Action<T> action) where T : ViewModel, new()
 		{
 			return self.UIStack.Switch(path, action);
 		}

@@ -1,5 +1,5 @@
 ﻿using Cysharp.Threading.Tasks;
-using ILib.MVVM;
+using ILib.Caller;
 using ILib.ServInject;
 using SRConnection;
 using SRConnection.Unity;
@@ -118,7 +118,7 @@ namespace App.Net
 
 		void OnMessage(Peer peer, byte[] data)
 		{
-			Messenger.Send(RealtimeEvent.Receive, data);
+			ServInjector.Resolve<IDispatcher>().Broadcast(RealtimeEvent.Receive, data);
 		}
 
 		void OnRemovePeer(Peer peer)
@@ -133,7 +133,7 @@ namespace App.Net
 		{
 			if (m_Client != null)
 			{
-				Messenger.Send(RealtimeEvent.Disconnect);
+				ServInjector.Resolve<IDispatcher>().Broadcast(RealtimeEvent.Disconnect);
 			}
 			Cleanup();
 		}

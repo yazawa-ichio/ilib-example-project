@@ -53,6 +53,13 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+    "com.unity.nuget.mono-cecil": {
+      "version": "1.10.1-preview.1",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
     "com.unity.test-framework": {
       "version": "1.1.24",
       "depth": 1,
@@ -80,6 +87,15 @@
       "dependencies": {},
       "hash": "c7882da0d23bcc5a56b854a86e326c19309b12f6"
     },
+    "jp.ilib.uvmb": {
+      "version": "https://github.com/yazawa-ichio/UVMBinding.git?path=Unity/Assets/UVMBinding",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.nuget.mono-cecil": "1.10.1-preview.1"
+      },
+      "hash": "82ace6cb47b7d70ce4131982429d2382e1dddad4"
+    },
     "jp.yazawa-ichio.ilib-abloader": {
       "version": "https://github.com/yazawa-ichio/ilib-abloader.git#0.1.6",
       "depth": 0,
@@ -93,13 +109,6 @@
       "source": "git",
       "dependencies": {},
       "hash": "6aa6a99a47a604464c8cfbc1d515943d7c8fe5aa"
-    },
-    "jp.yazawa-ichio.ilib-mvvm": {
-      "version": "https://github.com/yazawa-ichio/ilib-mvvm.git#0.3.2",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "da5276f4ecaa7112e1fe0b422bb4b8226a476854"
     },
     "jp.yazawa-ichio.ilib-scwidgets": {
       "version": "https://github.com/yazawa-ichio/ilib-scwidgets.git#0.0.5",

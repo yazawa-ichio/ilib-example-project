@@ -1,4 +1,4 @@
-﻿using App.MVVM;
+﻿using App.Binding;
 using Cysharp.Threading.Tasks;
 using ILib.Contents;
 using System.Threading;
@@ -15,16 +15,18 @@ namespace App
 
 			var entry = GameUI.Push<UIHostSetupVM>("UIHostSetup", (vm) =>
 			{
-				vm.RoomNameValue = UnityEngine.Random.Range(0, 99999).ToString().PadLeft(5, '0');
+				vm.Message = "ルーム名を入力してください";
+				vm.RoomName = UnityEngine.Random.Range(0, 99999).ToString().PadLeft(5, '0');
 				vm.OnBack += () =>
 				{
 					cancellation.Cancel();
 					future.TrySetResult(null);
 					GameUI.ExecuteBack();
 				};
+				vm.DecisionEnabled = true;
 				vm.OnDecision += (x) =>
 				{
-					vm.DecisionValue = false;
+					vm.DecisionEnabled = false;
 					vm.Message = "ユーザー参加を待っています";
 					OnDecision(x, future, cancellation.Token).Forget();
 				};

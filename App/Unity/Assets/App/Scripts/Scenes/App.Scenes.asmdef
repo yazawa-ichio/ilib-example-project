@@ -1,5 +1,6 @@
 {
     "name": "App.Scenes",
+    "rootNamespace": "",
     "references": [
         "GUID:ddaf9c63e805a764daacefc41a5e4173",
         "GUID:ccde6e5ada499fa4c8ea938339b35172",

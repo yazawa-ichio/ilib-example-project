@@ -1,4 +1,4 @@
-﻿using App.MVVM;
+﻿using App.Binding;
 using Cysharp.Threading.Tasks;
 using ILib.Contents;
 using System.Collections.Generic;
@@ -16,7 +16,8 @@ namespace App
 			try
 			{
 				var vm = new UIGuestSetupVM();
-				vm.UpdateValue = true;
+				vm.Message = "参加するルームを選んでください";
+				vm.UpdateEnabled = true;
 				vm.OnUpdate += () => UpdateRoom(vm, future, cancellation.Token).ConnectUI().Forget();
 				vm.OnBack += () =>
 				{
@@ -35,25 +36,24 @@ namespace App
 
 		async UniTask UpdateRoom(UIGuestSetupVM vm, UniTaskCompletionSource<InGameParam> future, CancellationToken token)
 		{
-			if (!vm.UpdateValue) return;
+			if (!vm.UpdateEnabled) return;
 			try
 			{
-				vm.UpdateValue = false;
+				vm.UpdateEnabled = false;
 				var rooms = await Realtime.GetRooms(token);
 				var list = new List<UIGuestSetupRoomItemVM>(rooms.Length);
-
+				vm.Rooms.Clear();
 				foreach (var room in rooms)
 				{
 					var roomVM = new UIGuestSetupRoomItemVM();
 					roomVM.Name = $"{room.No}:{room.Name}";
 					roomVM.OnButton += (index) => OnDecision(rooms[index], future, token).Forget();
-					list.Add(roomVM);
+					vm.Rooms.Add(roomVM);
 				}
-				vm.Rooms = list.ToArray();
 			}
 			finally
 			{
-				vm.UpdateValue = true;
+				vm.UpdateEnabled = true;
 			}
 		}
 

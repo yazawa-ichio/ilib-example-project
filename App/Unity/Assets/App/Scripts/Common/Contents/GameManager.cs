@@ -1,7 +1,6 @@
 ﻿using Cysharp.Threading.Tasks;
 using ILib.Caller;
 using ILib.Contents;
-using ILib.MVVM;
 using ILib.ServInject;
 using System;
 using System.Threading.Tasks;
@@ -22,7 +21,7 @@ namespace App
 	}
 
 	//ゲームのシーンを管理します。
-	public class GameManager : Content<GameManagerParam>, IMessengerHook
+	public class GameManager : Content<GameManagerParam>
 	{
 
 		public enum Event
@@ -34,8 +33,6 @@ namespace App
 
 		protected override async Task OnBoot()
 		{
-			Messenger.Default.Hook = this;
-
 			Modules.Add<UnitySceneModule>();
 			Modules.Add<ServiceInstallModule>();
 
@@ -58,7 +55,6 @@ namespace App
 
 		protected override async Task OnShutdown()
 		{
-			Messenger.Default.Hook = null;
 			await SceneManager.UnloadSceneAsync("Common");
 			ServInjector.Clear();
 		}
@@ -87,26 +83,6 @@ namespace App
 				ui.Alart(ex.ToString());
 				return true;
 			}
-		}
-
-		void IMessengerHook.OnSend(string name)
-		{
-			Dispatcher.Broadcast(name);
-		}
-
-		void IMessengerHook.OnSend<TEventName>(TEventName name)
-		{
-			Dispatcher.Broadcast(name);
-		}
-
-		void IMessengerHook.OnSend<TMessage>(string name, TMessage args)
-		{
-			Dispatcher.Broadcast(name, args);
-		}
-
-		void IMessengerHook.OnSend<TEventName, UMessage>(TEventName name, UMessage args)
-		{
-			Dispatcher.Broadcast(name, args);
 		}
 
 	}

@@ -1,5 +1,6 @@
 {
-    "name": "App.MVVM",
+    "name": "App.Binding",
+    "rootNamespace": "",
     "references": [
         "GUID:d1464baaae563094aae76b29eeacbb69",
         "GUID:ccde6e5ada499fa4c8ea938339b35172",
