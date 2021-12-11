@@ -8,7 +8,7 @@
     "com.unity.mobile.android-logcat": "1.2.3",
     "com.unity.ugui": "1.0.0",
     "jp.ilib.srconnection.unity": "https://github.com/yazawa-ichio/SRConnection.git?path=unity/Assets/SRConnection.Unity",
-    "jp.ilib.uvmb": "https://github.com/yazawa-ichio/UVMBinding.git?path=Unity/Assets/UVMBinding",
+    "jp.ilib.uvmb": "https://github.com/yazawa-ichio/UVMBinding.git?path=Unity/Assets/UVMBinding#v0.0.3",
     "jp.yazawa-ichio.ilib-abloader": "https://github.com/yazawa-ichio/ilib-abloader.git#0.1.6",
     "jp.yazawa-ichio.ilib-contents": "https://github.com/yazawa-ichio/ilib-contents.git#0.1.2",
     "jp.yazawa-ichio.ilib-scwidgets": "https://github.com/yazawa-ichio/ilib-scwidgets.git#0.0.5",

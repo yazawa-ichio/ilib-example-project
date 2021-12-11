@@ -54,7 +54,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.nuget.mono-cecil": {
-      "version": "1.10.1-preview.1",
+      "version": "1.10.1",
       "depth": 1,
       "source": "registry",
       "dependencies": {},
@@ -88,13 +88,13 @@
       "hash": "c7882da0d23bcc5a56b854a86e326c19309b12f6"
     },
     "jp.ilib.uvmb": {
-      "version": "https://github.com/yazawa-ichio/UVMBinding.git?path=Unity/Assets/UVMBinding",
+      "version": "https://github.com/yazawa-ichio/UVMBinding.git?path=Unity/Assets/UVMBinding#v0.0.3",
       "depth": 0,
       "source": "git",
       "dependencies": {
-        "com.unity.nuget.mono-cecil": "1.10.1-preview.1"
+        "com.unity.nuget.mono-cecil": "1.10.1"
       },
-      "hash": "82ace6cb47b7d70ce4131982429d2382e1dddad4"
+      "hash": "50177353e56c5da91182fc4da919026bd28d91d3"
     },
     "jp.yazawa-ichio.ilib-abloader": {
       "version": "https://github.com/yazawa-ichio/ilib-abloader.git#0.1.6",
