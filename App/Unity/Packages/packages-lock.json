@@ -1,11 +1,11 @@
 {
   "dependencies": {
     "com.cysharp.unitask": {
-      "version": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask#2.0.23",
+      "version": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask#2.2.5",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "1c264f380e2eb7d442482bf8bccec2ffc3faa79b"
+      "hash": "72e620d169841f32bc6110ad0e12ee9eae6f1aaf"
     },
     "com.unity.assetbundlebrowser": {
       "version": "1.7.0",
@@ -21,8 +21,24 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+    "com.unity.ext.nunit": {
+      "version": "1.0.6",
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.ide.visualstudio": {
+      "version": "2.0.12",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.test-framework": "1.1.9"
+      },
+      "url": "https://packages.unity.com"
+    },
     "com.unity.memoryprofiler": {
-      "version": "0.2.5-preview.1",
+      "version": "0.4.2-preview.1",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -31,10 +47,21 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.mobile.android-logcat": {
-      "version": "1.1.1",
+      "version": "1.2.3",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.test-framework": {
+      "version": "1.1.24",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.ext.nunit": "1.0.6",
+        "com.unity.modules.imgui": "1.0.0",
+        "com.unity.modules.jsonserialize": "1.0.0"
+      },
       "url": "https://packages.unity.com"
     },
     "com.unity.ugui": {
@@ -42,8 +69,16 @@
       "depth": 0,
       "source": "builtin",
       "dependencies": {
-        "com.unity.modules.ui": "1.0.0"
+        "com.unity.modules.ui": "1.0.0",
+        "com.unity.modules.imgui": "1.0.0"
       }
+    },
+    "jp.ilib.srconnection.unity": {
+      "version": "https://github.com/yazawa-ichio/SRConnection.git?path=unity/Assets/SRConnection.Unity",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "c7882da0d23bcc5a56b854a86e326c19309b12f6"
     },
     "jp.yazawa-ichio.ilib-abloader": {
       "version": "https://github.com/yazawa-ichio/ilib-abloader.git#0.1.6",
@@ -67,11 +102,11 @@
       "hash": "da5276f4ecaa7112e1fe0b422bb4b8226a476854"
     },
     "jp.yazawa-ichio.ilib-scwidgets": {
-      "version": "https://github.com/yazawa-ichio/ilib-scwidgets.git#0.0.4",
+      "version": "https://github.com/yazawa-ichio/ilib-scwidgets.git#0.0.5",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "b68c1e2d3f8ed1f1fc26e1b3454bde0b5d0807f1"
+      "hash": "ea72b5c6725bd13f0bfc2313b450496f4e76a5df"
     },
     "jp.yazawa-ichio.ilib-serv-injector": {
       "version": "https://github.com/yazawa-ichio/ilib-serv-injector.git#0.1.5",
@@ -81,25 +116,18 @@
       "hash": "e46471a6591af85ae9adf9bd53dd363e7d8cc679"
     },
     "jp.yazawa-ichio.ilib-sound-control": {
-      "version": "https://github.com/yazawa-ichio/ilib-sound-control.git#0.1.2",
+      "version": "https://github.com/yazawa-ichio/ilib-sound-control.git#0.1.6",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "a6df8ae94e98fd0c1687a31c890e8a638cb26688"
+      "hash": "60925c8cb93e301444400f3a6224b7071cf73af6"
     },
     "jp.yazawa-ichio.ilib-ui-control": {
-      "version": "https://github.com/yazawa-ichio/ilib-ui-control.git#0.1.9",
+      "version": "https://github.com/yazawa-ichio/ilib-ui-control.git#0.2.0",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "c8a004b600ca28c968d819f9a89f82c0c0a9001b"
-    },
-    "jp.yazawa-ichio.srconnection.unity": {
-      "version": "https://github.com/yazawa-ichio/SRConnection.git?path=unity/Assets/SRConnection.Unity",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "b04d83cb6424a4bc2839d3c7a35fcfbd9570b25c"
+      "hash": "c6ce3faabbbdbd9f643dac51090d6ed124a4ede5"
     },
     "com.unity.modules.androidjni": {
       "version": "1.0.0",
@@ -197,6 +225,18 @@
       "depth": 0,
       "source": "builtin",
       "dependencies": {
+        "com.unity.modules.ui": "1.0.0",
+        "com.unity.modules.imgui": "1.0.0",
+        "com.unity.modules.jsonserialize": "1.0.0",
+        "com.unity.modules.uielementsnative": "1.0.0"
+      }
+    },
+    "com.unity.modules.uielementsnative": {
+      "version": "1.0.0",
+      "depth": 1,
+      "source": "builtin",
+      "dependencies": {
+        "com.unity.modules.ui": "1.0.0",
         "com.unity.modules.imgui": "1.0.0",
         "com.unity.modules.jsonserialize": "1.0.0"
       }
