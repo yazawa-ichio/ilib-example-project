@@ -240,7 +240,7 @@ GameObject:
   - component: {fileID: 2243705514055628990}
   - component: {fileID: 5203324824754010636}
   - component: {fileID: 7048045064777214316}
-  - component: {fileID: 1575444660233885165}
+  - component: {fileID: 3019255738300052277}
   m_Layer: 5
   m_Name: Update
   m_TagString: Untagged
@@ -382,7 +382,7 @@ MonoBehaviour:
     version: 1
     00000000:
       type: {class: , ns: , asm: }
---- !u!114 &1575444660233885165
+--- !u!114 &3019255738300052277
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -391,14 +391,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2163980975224405190}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 847d35f130ec28e4ea206e3d1a78bd84, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c143d0f8f135af49a9ea1fefd13ea3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Path: UpdateEnabled
   m_Converter:
     id: 0
-  m_Target: {fileID: 2243705514055628990}
-  m_ChangeGameObject: 0
   references:
     version: 1
     00000000:
